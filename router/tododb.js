@@ -42,7 +42,7 @@ router.put('/:id', (req, res) => {
         if (results.affectedRows === 0) return res.status(404).send('Tugas tidak ditemukan');
         res.json({ id: req.params.id, task, completed });
     });
-});
+}); 
 
 // Endpoint untuk menghapus tugas
 router.delete('/:id', (req, res) => {
